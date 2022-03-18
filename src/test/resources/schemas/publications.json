@@ -1,0 +1,67 @@
+{
+  "type" : "struct",
+  "fields" : [ {
+    "name" : "key",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "value",
+    "type" : {
+      "type" : "struct",
+      "fields" : [ {
+        "name" : "author",
+        "type" : {
+          "type" : "struct",
+          "fields" : [ {
+            "name" : "firstname",
+            "type" : "string",
+            "nullable" : true,
+            "metadata" : { }
+          }, {
+            "name" : "lastname",
+            "type" : "string",
+            "nullable" : true,
+            "metadata" : { }
+          } ]
+        },
+        "nullable" : true,
+        "metadata" : { }
+      }, {
+        "name" : "category",
+        "type" : {
+          "type" : "array",
+          "elementType" : "string",
+          "containsNull" : true
+        },
+        "nullable" : true,
+        "metadata" : { }
+      }, {
+        "name" : "editor",
+        "type" : {
+          "type" : "struct",
+          "fields" : [ {
+            "name" : "firstname",
+            "type" : "string",
+            "nullable" : true,
+            "metadata" : { }
+          }, {
+            "name" : "lastname",
+            "type" : "string",
+            "nullable" : true,
+            "metadata" : { }
+          } ]
+        },
+        "nullable" : true,
+        "metadata" : { }
+      }, {
+        "name" : "title",
+        "type" : "string",
+        "nullable" : true,
+        "metadata" : { }
+      } ]
+    },
+    "nullable" : true,
+    "metadata" : { }
+  } ]
+}
